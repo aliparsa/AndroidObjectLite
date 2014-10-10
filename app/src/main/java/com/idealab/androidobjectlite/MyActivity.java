@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.idealab.androidobjectlite.utilities.SqlHelper;
+
 
 public class MyActivity extends ActionBarActivity {
 
@@ -12,6 +14,12 @@ public class MyActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        try {
+            SqlHelper.generateCreateTableQuery(new Student(987, "اشکان", 15.6));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
