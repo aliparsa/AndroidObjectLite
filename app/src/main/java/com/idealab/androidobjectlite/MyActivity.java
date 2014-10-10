@@ -1,4 +1,4 @@
-package com.apag.idealab.androidobjectlite;
+package com.idealab.androidobjectlite;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
